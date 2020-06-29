@@ -34,9 +34,9 @@ class ViewController: UIViewController {
         
         @IBAction func addCategory(_ sender: Any) {
             
-            let alert = UIAlertController(title: "Add a category", message: "", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Create new folder", message: "", preferredStyle: .alert)
             alert.addTextField(configurationHandler: addCategoryName(textField:))
-            alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { (action) in
+            alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (action) in
                 if(self.categoryName.text!.count < 1) {
                     self.emptyFieldAlert()
                     return
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         func addCategoryName(textField: UITextField) {
             
             self.categoryName = textField
-            self.categoryName.placeholder = "Enter Category Name"
+            self.categoryName.placeholder = "Enter folder Name"
             
         }
 
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
                 try categoryContext.save()
                 tableView.reloadData()
             } catch {
-                print("Error saving categories \(error.localizedDescription)")
+                print("Error saving folder \(error.localizedDescription)")
             }
         }
         
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
             do {
                 categoryArray = try categoryContext.fetch(request)
             } catch {
-                print("Error loading categories: \(error.localizedDescription)")
+                print("Error loading folders: \(error.localizedDescription)")
             }
     //        data fetched
             tableView.reloadData()
@@ -126,14 +126,14 @@ class ViewController: UIViewController {
                 try categoryContext.save()
                 tableView.reloadData()
             } catch {
-                print("Error saving categories \(error.localizedDescription)")
+                print("Error saving new folder \(error.localizedDescription)")
             }
             
         }
         
     //    to be shown if user enters existing category name
         func showAlert() {
-            let alert = UIAlertController(title: "Category with same name already Exists!", message: "", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Folder with same name already Exists!", message: "", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
 
