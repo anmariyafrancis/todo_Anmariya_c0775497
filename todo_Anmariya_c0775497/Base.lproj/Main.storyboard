@@ -49,7 +49,7 @@
                         <viewLayoutGuide key="safeArea" id="DCx-4z-tyb"/>
                     </view>
                     <navigationItem key="navigationItem" id="e88-mj-Ohy">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="V4w-Wt-Yx9">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="folder.fill.badge.plus" catalog="system" id="V4w-Wt-Yx9">
                             <connections>
                                 <action selector="addCategory:" destination="9fc-WS-w92" id="7Ct-7H-d5r"/>
                             </connections>
@@ -119,7 +119,7 @@
                         <viewLayoutGuide key="safeArea" id="089-sX-eez"/>
                     </view>
                     <navigationItem key="navigationItem" id="DeZ-t6-4n6">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="1zt-RE-ICY">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="1zt-RE-ICY">
                             <connections>
                                 <action selector="addTodo:" destination="mYm-Us-gxA" id="MOe-eq-hzd"/>
                             </connections>
@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="1773.913043478261" y="100.44642857142857"/>
         </scene>
-        <!--Todo View Controller-->
+        <!--To Do View Controller-->
         <scene sceneID="lCU-zr-CYX">
             <objects>
-                <viewController id="8WF-cL-uJV" customClass="TodoViewController" customModule="todo_Anmariya_c0775497" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8WF-cL-uJV" customClass="ToDoViewController" customModule="todo_Anmariya_c0775497" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RCD-aI-1rs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,6 +306,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="folder.fill.badge.plus" catalog="system" width="128" height="86"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
     </resources>
 </document>

@@ -79,12 +79,12 @@ class ViewController: UIViewController {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             categoryContext = appDelegate.persistentContainer.viewContext
             
-            fetchCategoryData()
+            //fetchCategoryData()
             
         }
         
     //    Initializes a default archived folder
-        func firstTimeSetup() {
+       func firstTimeSetup() {
             let categoryNames = self.categoryArray.map {$0.name}
             guard !categoryNames.contains("Archived") else {return}
             let newCategory = Category(context: self.categoryContext)
@@ -99,7 +99,7 @@ class ViewController: UIViewController {
         }
         
         
-        func fetchCategoryData() {
+       func fetchCategoryData() {
     //        request
             let request: NSFetchRequest<Category> = Category.fetchRequest()
             let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
