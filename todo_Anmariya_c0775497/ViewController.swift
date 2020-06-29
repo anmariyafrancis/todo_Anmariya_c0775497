@@ -86,9 +86,9 @@ class ViewController: UIViewController {
     //    Initializes a default archived folder
        func firstTimeSetup() {
             let categoryNames = self.categoryArray.map {$0.name}
-            guard !categoryNames.contains("Archived") else {return}
+            guard !categoryNames.contains("Default") else {return}
             let newCategory = Category(context: self.categoryContext)
-            newCategory.name = "Archived"
+            newCategory.name = "Default"
             self.categoryArray.append(newCategory)
             do {
                 try categoryContext.save()
@@ -173,7 +173,7 @@ class ViewController: UIViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
             let category = categoryArray[indexPath.row]
     //        sets different color for archived category
-            if category.name == "Archived" {
+            if category.name == "Default" {
                 cell.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             }
             cell.textLabel?.text = category.name
