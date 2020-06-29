@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+class TodoItem {
+    var todoTitle: String!
+    
+}
