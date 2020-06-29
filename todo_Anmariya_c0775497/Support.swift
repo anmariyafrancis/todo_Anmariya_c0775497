@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import CoreData
 import UIKit
 
@@ -26,4 +25,3 @@ func saveContext(){
     }
     
 }
-
