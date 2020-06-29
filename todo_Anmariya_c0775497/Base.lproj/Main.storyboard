@@ -29,10 +29,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Todo List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHh-t1-oDf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todo List Folders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHh-t1-oDf">
                                 <rect key="frame" x="0.0" y="98" width="414" height="32.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -50,6 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="e88-mj-Ohy">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="folder.fill.badge.plus" catalog="system" id="V4w-Wt-Yx9">
+                            <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addCategory:" destination="9fc-WS-w92" id="7Ct-7H-d5r"/>
                             </connections>
@@ -67,7 +68,7 @@
         <!--Task List View Controller-->
         <scene sceneID="S4n-Ug-Zdi">
             <objects>
-                <viewController id="mYm-Us-gxA" customClass="TaskListViewController" customModule="todo_Anmariya_c0775497" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mYm-Us-gxA" customClass="TaskListViewController" customModule="todo_Jyothi_C0775696" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xWq-Rd-vUd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,6 +121,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DeZ-t6-4n6">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="1zt-RE-ICY">
+                            <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addTodo:" destination="mYm-Us-gxA" id="MOe-eq-hzd"/>
                             </connections>
@@ -137,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="1773.913043478261" y="100.44642857142857"/>
         </scene>
-        <!--To Do View Controller-->
+        <!--Todo View Controller-->
         <scene sceneID="lCU-zr-CYX">
             <objects>
-                <viewController id="8WF-cL-uJV" customClass="ToDoViewController" customModule="todo_Anmariya_c0775497" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8WF-cL-uJV" customClass="TodoViewController" customModule="todo_Anmariya_c0775497" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RCD-aI-1rs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,7 +230,7 @@
         <!--Move Todo View Controller-->
         <scene sceneID="Oom-J5-lNE">
             <objects>
-                <viewController id="Ruc-mR-dEY" customClass="MoveTodoViewController" customModule="todo_Anmariya_c0775497" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ruc-mR-dEY" customClass="MoveTodoViewController" customModule="todo_Jyothi_C0775696" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OUa-pH-FmN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
