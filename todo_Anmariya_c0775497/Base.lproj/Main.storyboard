@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="1773.913043478261" y="100.44642857142857"/>
         </scene>
-        <!--To Do View Controller-->
+        <!--Todo View Controller-->
         <scene sceneID="lCU-zr-CYX">
             <objects>
-                <viewController id="8WF-cL-uJV" customClass="ToDoViewController" customModule="todo_Anmariya_c0775497" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8WF-cL-uJV" customClass="TodoViewController" customModule="todo_Anmariya_c0775497" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RCD-aI-1rs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

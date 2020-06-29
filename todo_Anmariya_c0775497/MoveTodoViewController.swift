@@ -11,7 +11,7 @@ import CoreData
 
 class MoveTodoViewController: UIViewController {
 
-    var categories = [Category]()
+        var categories = [Category]()
         var selectedTodo: [Todo]? {
             didSet {
                 loadCategories()

@@ -9,11 +9,11 @@
 import UIKit
 import CoreData
 
-class ToDoViewController: UIViewController {
+class TodoViewController: UIViewController {
 
     @IBOutlet weak var todoTitleLabel: UITextField!
         
-        var todo: Todo?
+         var todo: Todo?
     //    delegate for previous screen to call methods
         var delegate: TaskListViewController?
         
